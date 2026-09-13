@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Warmth & Hope | Blanket Non-Profit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Placeholders where Header and Footer will load -->
+  <div id="header-placeholder"></div>
+
+  <!-- SECTION 1: HERO -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1 class="hero-title">MAKING THE WORLD A HAPPIER PLACE.</h1>
+        <p class="hero-subtitle">Providing cozy handmade fleece, woven, and thermal blankets to children and families in cold-weather regions worldwide.</p>
+        <div>
+          <button class="btn-pill">Donate Now</button>
+          <button class="btn-pill-outline">Learn More</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" class="oval-frame-main" alt="Children wrapped in cozy knit blankets" />
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVY TRANSITION 1 -->
+  <div class="wave-transition-1">
+    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,32L60,42.7C120,53,240,75,360,80C480,85,600,75,720,58.7C840,43,960,21,1080,16C1200,11,1320,21,1380,26.7L1440,32L1440,120L0,120Z" fill="#FFFFFF"></path>
+    </svg>
+  </div>
+
+  <!-- SECTION 2: MIDDLE SECTION -->
+  <section class="middle-section">
+    <div class="container middle-grid">
+      <div class="middle-text">
+        <h2>MAKING THE WORLD A PLACE?</h2>
+        <p>Every blanket provides physical warmth and emotional security to families navigating tough winter conditions. Learn how our blanket drives reach communities globally.</p>
+        <div>
+          <button class="btn-pill">Rescue Now</button>
+          <button class="btn-pill-outline">Learn More</button>
+        </div>
+      </div>
+      <div style="text-align: center;">
+        <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=800&q=80" class="oval-frame-secondary" alt="Stack of folded soft blankets" />
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVY TRANSITION 2 -->
+  <div class="wave-transition-2">
+    <svg viewBox="0 0 1440 140" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,69.3C960,85,1056,107,1152,106.7C1248,107,1344,85,1392,74.7L1440,64L1440,140L0,140Z" fill="#f8cfc2"></path>
+    </svg>
+  </div>
+
+  <!-- SECTION 3: PEACH CARDS SECTION -->
+  <section class="peach-section">
+    <div class="container">
+      <div class="peach-header">
+        <h2>OUR CREATE & PLAYFUL</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Building warmth through community-led blanket distribution.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="option-c-card">
+          <div class="card-icon"><i class="fa-solid fa-heart"></i></div>
+          <h3>FLEECE DRIVES</h3>
+          <p>Providing high-grade thermal fleece blankets directly to disaster recovery zones and local shelters.</p>
+          <button class="btn-pill" style="padding: 6px 18px; font-size: 0.8rem;">LEARN MORE</button>
+        </div>
+
+        <div class="option-c-card">
+          <div class="card-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
+          <h3>HANDMADE KNITS</h3>
+          <p>Supporting local knitting circles and volunteer groups crafting custom blankets for hospital wards.</p>
+          <button class="btn-pill" style="padding: 6px 18px; font-size: 0.8rem;">LEARN MORE</button>
+        </div>
+
+        <div class="option-c-card">
+          <div class="card-icon"><i class="fa-solid fa-shield-cat"></i></div>
+          <h3>SHELTER RELIEF</h3>
+          <p>Ensuring every individual in unhoused winter shelters receives clean, heavy bedding each season.</p>
+          <button class="btn-pill" style="padding: 6px 18px; font-size: 0.8rem;">LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <!-- JavaScript to load header.html and footer.html on GitHub Pages -->
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header-placeholder').innerHTML = data);
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
+
+</body>
+</html>

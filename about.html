@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Warmth & Hope</title>
+
+  <!-- Link your external CSS (this keeps the theme identical) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 1. Header Placeholder -->
+  <div id="header-placeholder"></div>
+
+  <!-- 2. NEW PAGE CONTENT GOES HERE -->
+  <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 16px;">About Our Mission</h1>
+    <p style="color: var(--text-muted); line-height: 1.6;">
+      We are a group of believers who love Jesus and people. We desire to spread the Good News, carrying out the Great Commission as expressed in Matthew 28:16-20
+
+Matthew 28:16-20 says, “Then the eleven disciples went to Galilee, to the mountain where Jesus had told them to go. When they saw him, they worshiped him; but some doubted. Then Jesus came to them and said, “All authority in heaven and on earth has been given to me. Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age.”
+    </p>
+  </main>
+
+  <!-- 3. Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- 4. Fetch Header & Footer (Same script on every page for GitHub Pages) -->
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header-placeholder').innerHTML = data);
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
+
+</body>
+</html>

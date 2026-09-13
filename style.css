@@ -275,3 +275,15 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* Keep your existing .logo class */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Add this new rule to resize the logo image */
+.logo img {
+  height: 40px;    /* Adjust this number to make the logo larger or smaller */
+  width: auto;     /* Maintains correct aspect ratio */
+  display: block;
+}
